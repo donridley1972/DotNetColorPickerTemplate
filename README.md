@@ -15,3 +15,7 @@ The template will take care of the manifests and copy the applicable DLL's to yo
 <b>GLOBAL SETTING "Generate Manifest" MUST BE SET TO TRUE</b>
 
 ** Please note that I cannot guarantee this will work on Clarion 8 and below.
+
+
+
+20240104  Fixed manifest issue with Clarion 8
