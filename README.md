@@ -12,4 +12,6 @@ You have two options:
 
 The template will take care of the manifests and copy the applicable DLL's to your project's directory.
 
+<b>GLOBAL SETTING "Generate Manifest" MUST BE SET TO TRUE</b>
+
 ** Please note that I cannot guarantee this will work on Clarion 8 and below.
