@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+<assemblyIdentity name="ClaColorPickerSxS" version="1.0.0.0" processorArchitecture="x86"></assemblyIdentity>
+<clrClass clsid="{76183291-ED7E-3DE1-A506-4522C3B77276}" progid="ClaColorPickerSxS" threadingModel="Both" name="ClaColorPickerSxS.Form1" runtimeVersion="v4.0.30319"></clrClass>
+<clrClass clsid="{D63D2A6A-CE66-3987-8719-2E86C0C1A5DE}" progid="ClaColorPickerSxS.Form1+OnPostToClarion" threadingModel="Both" name="ClaColorPickerSxS.Form1+OnPostToClarion" runtimeVersion="v4.0.30319"></clrClass>
+<file name="ClaColorPickerSxS.dll" hashalg="SHA1"></file>
+</assembly>
