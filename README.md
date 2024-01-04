@@ -4,4 +4,10 @@
 
 Installer provided.
 
+Clarion 10 example app included.
+
+You have two options:
+* Vertically stacked
+* Side by Side
+
 ** Please note that I cannot guarantee this will work on Clarion 8 and below.
