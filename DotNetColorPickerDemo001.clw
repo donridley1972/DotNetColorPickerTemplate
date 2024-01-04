@@ -99,7 +99,24 @@ ReturnValue          BYTE,AUTO
 
 !---------------------------------------------------
 MainOLE:2EventHandler FUNCTION(*SHORT ref,SIGNED OLEControlFEQ,LONG OLEEvent)
+ColorGrp        GROUP
+B               BYTE
+G               BYTE
+R               BYTE
+A               BYTE
+                END
+ColorLng        Long,Over(ColorGrp)
+ColorStr        String(15)
+KnownColor      String(30)
   CODE
+    If OcxGetParamCount(ref)
+        Case OLEEvent 
+        Of 301
+            ColorLng = OcxGetParam(ref, 1) !LONG Color as Argb
+            ColorStr = OcxGetParam(ref, 2) !STRING  Alpha,Red,Green,Blue
+            KnownColor = OcxGetParam(ref, 3)
+        End  
+    End
   RETURN(True)
 !---------------------------------------------------
 MainOLE:2PropChange PROCEDURE(SIGNED OLEControlFEQ,STRING ChangedProperty)
@@ -118,14 +135,17 @@ R               BYTE
 A               BYTE
                 END
 ColorLng        Long,Over(ColorGrp)
+ColorStr        String(15)
+KnownColor      String(30)
   CODE
-    Case OLEEvent 
+    If OcxGetParamCount(ref)
+        Case OLEEvent 
         Of 301
-        If OcxGetParamCount(ref)
-            ! OcxGetParam(ref, 1) = STRING  Alpha,Red,Green,Blue
-            ! OcxGetParam(ref, 2) = LONG Color as Argb
-        End
-    End  
+            ColorLng = OcxGetParam(ref, 1) !LONG Color as Argb
+            ColorStr = OcxGetParam(ref, 2) !STRING  Alpha,Red,Green,Blue
+            KnownColor = OcxGetParam(ref, 3)
+        End  
+    End
   RETURN(True)
 !---------------------------------------------------
 MainOLEPropChange PROCEDURE(SIGNED OLEControlFEQ,STRING ChangedProperty)
