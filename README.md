@@ -10,4 +10,6 @@ You have two options:
 * Vertically stacked
 * Side by Side
 
+The template will take care of the manifests and copy the applicable DLL's to your project's directory.
+
 ** Please note that I cannot guarantee this will work on Clarion 8 and below.
