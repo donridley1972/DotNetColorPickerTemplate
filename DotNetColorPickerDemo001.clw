@@ -76,6 +76,9 @@ ReturnValue          BYTE,AUTO
   OCXRegisterPropChange(?OLE:2,MainOLE:2PropChange)
   OCXRegisterPropEdit(?OLE:2,MainOLE:2PropEdit)
   ?OLE{PROP:Create} = 'ClaColorPickerSxS'
+    ?OLE{'SetShowAngleArrow(' & true & ')'}
+    ?OLE{'SetShowCenterLines(' & true & ')'}
+    ?OLE{'SetShowSaturationRing(' & true & ')'}      
   OCXRegisterEventProc(?OLE,MainOLEEventHandler)
   OCXRegisterPropChange(?OLE,MainOLEPropChange)
   OCXRegisterPropEdit(?OLE,MainOLEPropEdit)
