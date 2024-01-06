@@ -18,6 +18,9 @@ The template will take care of the manifests and copy the applicable DLL's to yo
 
 With Clarion 8, everything generates fine from the template, however, I cannot get the .NET control to display in the OLE control. C10 and C11.x work fine.
 
+20240106
+
+Added legacy support to template
 
 20240104  
 
